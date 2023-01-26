@@ -11,6 +11,18 @@ body {
     font-family: 'Quicksand', sans-serif;
 }
 
+i, span {
+    color: white;
+}
+
+i {
+    font-size: 23px;
+}
+
+span { 
+    font-size: 10px;
+}
+
 /* STYLE HEADER */
 
 #head-container {
@@ -20,13 +32,19 @@ body {
     background-color: rgb(34, 34, 34);
     color: white;
     text-align: end;
-    padding: 10px 8px;
+    padding: 8px 8px;
+}
+
+#head-container i {
+    text-align: center;
+    font-size: 10px;
 }
 
 #head-container span {
     background-color: rgb(74, 74, 74);
-    padding: 3px 4px;
+    padding: 6px 4px;
     border-radius: 6px;
+    text-align: center;
 }
 
 /* STYLE MAIN */
@@ -77,28 +95,33 @@ main {
     left: 0;
     bottom: 0;
     background-color: rgb(34, 34, 34);
-    padding: 0.5% 0;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+.command {
+    padding: 0.5% 0;
 }
 
 .c-left {
-    width: 28%;
+    width: 15%;
 
 }
 
 .c-center {
-    width: 44%;
+    width: 67%;
 
 }
 
 .c-right {
-    width: 28%;
-
+    width: 18%;
+    background-color: rgba(74, 74, 74, 0.6);
+    align-self: stretch;
+    position: relative;
 }
-
+/* footer visual style */
 .icon {
-    color: white;
     padding: 8px;
     text-align: center;
     display: flex;
@@ -118,8 +141,37 @@ main {
     padding: 0 3%;
 }
 
+#end span {
+    background-color: rgba(34, 34, 34, 0.5);
+    color: red;
+    font-weight: 700;
+    padding: 10px;
+    border: 2px solid red;
+    border-radius: 10px;
+    /* centrare */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* NAV STYLE */
+nav {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 3%;
+}
+
+.navigator i {
+    display: block;
+}
+
 /* HOVER e ACTIVE STYLE */
 
 .microphone:active i {
+    color: red;
+}
+
+.navigator:hover i {
     color: red;
 }
