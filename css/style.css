@@ -43,16 +43,16 @@ main {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    gap: 0;
+    gap: 5% 0;
     overflow-y: scroll;
 }
 
 /* STYLE CARD */
 
 .user-card {
-    margin: 6px 8px;
-    width: calc(100% / 5 - 16px);
-    height: 200px;
+    margin: 6px 9px;
+    width: calc(100% / 5 - 18px);
+    height: 180px;
     background-image: url('https://picsum.photos/200');
     background-size: cover;
     background-position: center;
@@ -69,6 +69,54 @@ main {
 
 }
 
+/* STYLE FOOTER */
+
+#footer-container {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: rgb(34, 34, 34);
+    padding: 0.5% 0;
+    display: flex;
+    align-items: center;
+}
+
+.c-left {
+    width: 28%;
+
+}
+
+.c-center {
+    width: 44%;
+
+}
+
+.c-right {
+    width: 28%;
+
+}
+
+.icon {
+    color: white;
+    padding: 8px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.icon i {
+    display: block;
+    font-size: 23px;
+}
+
+.icon span {
+    font-size: 10px;
+}
+
+.angle {
+    padding: 0 3%;
+}
 
 /* HOVER e ACTIVE STYLE */
 
