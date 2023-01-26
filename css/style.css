@@ -33,22 +33,45 @@ body {
 
 main {
     background-color: black;
-    padding-top: 8%;
+    padding-top: 4.5%;
 }
 
 #main-container {
     width: 90%;
+    height: 100vh;
     margin: auto;
-    /* DEBUG */
-    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 0;
+    overflow-y: scroll;
 }
 
 /* STYLE CARD */
 
 .user-card {
-    background-image: url("/img/profile.jpg");
-    margin: 5px 8px;
+    margin: 6px 8px;
     width: calc(100% / 5 - 16px);
-    height: 20vh;
+    height: 200px;
+    background-image: url('https://picsum.photos/200');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
 
+.microphone {
+    color: white;
+    background-color: rgba(74, 74, 74, 0.6);
+    position: absolute;
+    bottom: 5%;
+    left: 0; 
+    padding: 1%;
+
+}
+
+
+/* HOVER e ACTIVE STYLE */
+
+.microphone:active i {
+    color: red;
 }
